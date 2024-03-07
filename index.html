@@ -9,28 +9,132 @@
 
 <body>
 
-
+    <input type="serch" id="list">
+    <button onclick="submit()">submit</button>
 
 
 
 
     <script>
+        let arr = [
+            {
+                name: "footwear",
+                color: "black",
+                price: 200,
+                disc: 20,
+                avilable: "yes"
+            },
+            {
+                name: "laptop",
+                color: "black",
+                price: 2000,
+                disc: 10,
+                avilable: "no"
+            },
+            {
+                name: "kurta",
+                color: "black",
+                price: 600,
+                disc: 30,
+                avilable: "yes"
+            },
+            {
+                name: "tv",
+                color: "black",
+                price: 700,
+                disc: 20,
+                avilable: "yes"
+            },
+            {
+                name: "baby-cloth",
+                color: "green",
+                price: 800,
+                disc: 20,
+                avilable: "yes"
+            },
+            {
+                name: "shirt",
+                color: "black",
+                price: 400,
+                disc: 20,
+                avilable: "no"
+            },
+            {
+                name: "t-shirt",
+                color: "yellow",
+                price: 200,
+                disc: 20,
+                avilable: "yes"
+            },
+            {
+                name: "bag",
+                color: "black",
+                price: 200,
+                disc: 20,
+                avilable: "no"
+            },
+            {
+                name: "night-dress",
+                color: "orange",
+                price: 200,
+                disc: 25,
+                avilable: "yes"
+            },
+            {
+                name: "ring",
+                color: "gold",
+                price: 4000,
+                disc: 20,
+                avilable: "yes"
+            },
+            {
+                name: "phone",
+                color: "pink",
+                price: 200,
+                disc: 20,
+                avilable: "no"
+            },
+            {
+                name: "tablate",
+                color: "silver",
+                price: 2200,
+                disc: 10,
+                avilable: "yes"
+            },
+            {
+                name: "laggies",
+                color: "black",
+                price: 300,
+                disc: 20,
+                avilable: "yes"
+            },
+            {
+                name: "scooter",
+                color: "black",
+                price: 4200,
+                disc: 20,
+                avilable: "yes"
+            },
 
-        let n = 5
-        function fact(n) {
-            if (n === 0 || n === 1) {
-                return 1;
-            } else {
-                return n * fact(n - 1);
+            {
+                name: "bangles",
+                color: "red",
+                price: 250,
+                disc: 40,
+                avilable: "no"
             }
+
+        ]
+
+        function submit() {
+            let list = document.getElementById("list").value;
+
+            let result = arr.filter((val) => val.name === list || val.color === list)
+            console.log(result);
         }
 
-
-        let number = parseInt(prompt("Enter number"))
-        let result = fact(n)
-        console.log("fact" ,result);
-
     </script>
+
 </body>
 
 </html>
